@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import os
 
 def extract_pokemon_list(limit=50):
     url = f"https://pokeapi.co/api/v2/pokemon?limit={limit}"
@@ -24,3 +25,6 @@ def transform_pokemon_data(pokemon_list):
 
     return pd.DataFrame(data)
 
+def save_to_csv(df, filename):
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    df.to_csv(filename, index=False)
