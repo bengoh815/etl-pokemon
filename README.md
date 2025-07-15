@@ -11,6 +11,7 @@ This project is designed as an introductory ETL example for learning data engine
 - Filters Pokémon with `base_experience > 100`
 - Transforms and structures the data into a clean format
 - Loads the result into a CSV file
+- Visualizes results with a Streamlit dashboard
 
 ## 🛠 Tech Stack
 
@@ -20,11 +21,13 @@ This project is designed as an introductory ETL example for learning data engine
 | Data Fetch     | `requests`     |
 | Data Transform | `pandas`       |
 | Output         | CSV file       |
+| Dashboard      | `streamlit`    |
 
 ## 📂 Project Structure
 
 ```
 etl-pokemon/
+├── app.py           # Streamlit app for visualizing results
 ├── etl_pokemon.py         # Main ETL runner
 ├── utils.py               # Helper functions (Extract, Transform, Load)
 ├── requirements.txt       # Python dependencies
@@ -56,6 +59,14 @@ python etl_pokemon.py
 ```
 
 The filtered Pokémon data will be saved to `output/filtered_pokemon.csv`.
+
+4. Run the Streamlit Dashboard
+
+```bash
+streamlit run app.py
+```
+
+This will open an interactive dashboard in your browser to explore the filtered Pokémon stats.
 
 ## 📈 Sample Output
 
