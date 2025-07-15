@@ -4,7 +4,7 @@ import pandas as pd
 st.title("Pokémon Data Viewer")
 
 # Load your filtered CSV
-df = pd.read_csv("output/filtered_pokemon.csv")
+df = pd.read_csv("data/filtered_pokemon.csv")
 
 # Simple filter
 min_exp = st.slider("Minimum Base Experience", 0, 300, 100)
