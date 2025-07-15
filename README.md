@@ -4,6 +4,11 @@ A simple ETL (Extract, Transform, Load) pipeline that fetches Pokémon data from
 
 This project is designed as an introductory ETL example for learning data engineering concepts using Python.
 
+## 🌐 Live Demo
+
+🖥️ **Check out the live app here:**  
+👉 [https://etl-pokemon.streamlit.app](https://etl-pokemon.streamlit.app)
+
 ## 📌 Features
 
 - Extracts a list of Pokémon from the public API
