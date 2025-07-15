@@ -21,6 +21,16 @@ This project is designed as an introductory ETL example for learning data engine
 | Data Transform | `pandas`       |
 | Output         | CSV file       |
 
+## 📂 Project Structure
+
+```
+etl-pokemon/
+├── etl_pokemon.py         # Main ETL runner
+├── utils.py               # Helper functions (Extract, Transform, Load)
+├── requirements.txt       # Python dependencies
+└── output/
+└── filtered_pokemon.csv  # Resulting file
+```
 
 ## 🚀 Getting Started
 
@@ -46,6 +56,20 @@ python etl_pokemon.py
 ```
 
 The filtered Pokémon data will be saved to `output/filtered_pokemon.csv`.
+
+## 📈 Sample Output
+
+| name      | base_experience | height | weight |
+| --------- | --------------- | ------ | ------ |
+| pikachu   | 112             | 4      | 60     |
+| bulbasaur | 120             | 7      | 69     |
+
+## 🔮 Ideas for Future Expansion
+
+- Save to a SQLite or PostgreSQL database
+- Schedule with cron or Prefect
+- Add logging and error handling
+- Visualize Pokémon stats with a dashboard (e.g. Streamlit)
 
 ## 📄 License
 
